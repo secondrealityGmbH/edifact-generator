@@ -6,14 +6,14 @@ class Interchange
     /*
      * Interchange header parameters
      */
-    private $interchangeCode;
-    private $sender;
-    private $receiver;
-    private $date;
-    private $time;
+    protected $interchangeCode;
+    protected $sender;
+    protected $receiver;
+    protected $date;
+    protected $time;
 
-    private $messages;
-    private $composed;
+    protected $messages;
+    protected $composed;
 
     public function __construct($sender, $receiver, $date = null, $time = null, $interchangeCode = null)
     {

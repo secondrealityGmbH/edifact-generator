@@ -37,6 +37,7 @@ class Message
         $temp=[];
         $temp[]=['UNH', $this->messageID, $this->messageType];
 
+
         foreach ($this->messageContent as $i) {
             $temp[] = $i;
         }
