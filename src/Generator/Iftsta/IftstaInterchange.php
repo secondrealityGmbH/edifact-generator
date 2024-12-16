@@ -51,10 +51,10 @@ class IftstaInterchange extends Interchange
             $this->version = $version;
         }
 
-        if ($testMode === null) {
+        if ($testMode === true) {
             $this->testMode = 1;
         } else {
-            $this->testMode = $testMode;
+            $this->testMode = null;
         }
 
     }
